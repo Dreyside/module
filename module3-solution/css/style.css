@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff; 
+}
+#navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(124, 115, 115);
+  padding: 10px 20px;
+}
+h1 a{
+  font-weight: bold; 
+  color: black;
+  text-decoration: none;
+ }
+ul .mobile-menu {
+  display: flex;
+  text-decoration: none;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+} 
+ul.mobile-menu a {
+  color: black;
+  text-decoration: none;
+}
+ul li {
+  padding: 0;
+  /* margin-left: 10px; */
+  align-items: center;
+}
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: rgb(179, 167, 167);
+
+}
+
+@media screen and (max-width:768px)  {
+ header-nav {
+  display: none;
+  cursor: pointer;
+ } 
+ ul .mobile-menu {
+  /* display: block; */
+  width: 100%;
+  text-decoration: none;
+  display: none;
+  /* text-align: center; */
+  list-style: none; 
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 0;
+  margin-top: 12px;
+  
+ }
+ ul.mobile-menu li {
+  border-bottom: 1px solid black;
+  margin-top: 5px;
+  font-size: 1.2rem;
+
+  
+ }
+ ul.mobile-menu li {
+  text-align: center; 
+ 
+ }
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+} 
+#hamburger-icon {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg); translate: (-6px, -8px);
+}
+
+
+
+.mobile-menu {
+  display: none;
+  height: calc(100vh-50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+
+.card {
+  background: rgb(112, 112, 112);
+  width: 80%; 
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+.card > .card-header {
+  text-align: center;
+  padding: 10px 0;
+}
+ 
+
+ .header-content { 
+  text-align: center;  
+}
+ .header-top { 
+  margin: 0 auto; 
+  vertical-align: middle; 
+}
+.header-content { 
+  color: black;
+  justify-content: center;
+  margin-bottom: 50px; 
+} 
+p {
+ margin: 20px 20px; 
+  }
+ }
+
+ @media (min-width: 768px) and (max-width: 993px) {
+ .mobile-menu {
+  display: none;
+ }  
+ /* .card {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  margin: 0 15px 0 10px;
+  
+  background-color: rgb(124, 115, 115);
+  width: 100vh;
+  
+ } */
+ #navbar-brand {
+  margin-bottom: 2.5rem;
+ }
+ #container {
+  display: flex;
+  padding: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: none;
+  padding: 0 24px;
+ }
+  p {
+  padding: 15px;
+ }
+  
+ .header-content {  
+   text-align: center; 
+   margin-bottom: 30px; 
+  }
+  .two-card {
+    display:flex;
+          
+  }
+    .card-one {
+      width: fit-content;
+      display: block;
+      background-color: rgb(124, 115, 115);
+       
+    }
+    .card-two{
+      width: fit-content;
+      display: block;
+      background-color: rgb(124, 115, 115);
+       
+      margin-left: 16px;
+       
+    }
+    .card-three{
+      max-width: 100%;
+      height: 40em;
+       
+      background-color: rgb(124, 115, 115);
+       
+      margin-top: 16px;
+    }
+    .card-header{
+      text-align: center;
+      margin-top: 10px;
+    }
+ }
+ 
+
+ @media (min-width: 993px) {
+  .mobile-menu {
+    display: none;
+   }  
+   /* .card {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    margin: 0 12px 0 10px;
+    
+    background-color: rgb(124, 115, 115);
+    width: 100vh;
+    
+   } */
+   #navbar-brand {
+    margin-bottom: 2.5rem;
+   }
+   #container {
+    display: flex;
+    padding: 1.25rem;
+   }
+    p {
+    padding: 15px;
+   }
+    
+   .header-content { 
+     text-align: center; 
+     margin-bottom: 30px; 
+    }
+    .card-header {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .two-card{
+       display: flex;
+       
+ 
+      }
+      .card-one {
+        width: fit-content;
+        display: block;
+        background-color: rgb(124, 115, 115);
+        
+      }
+      .card-two{
+        width: fit-content;
+        display: block;
+        background-color: rgb(124, 115, 115);
+        
+        margin-left: 16px;
+         
+      }
+      .card-three{
+         
+         max-width: 100%;
+         
+        background-color: rgb(124, 115, 115);
+        
+        margin-left: 16px;
+      }
+      .sushi{
+        top: 0;
+      }
+}
